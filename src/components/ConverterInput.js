@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ConverterInput = ({ textInput, conversionMode, handleTextareaChange, handleRadioChange })=> {
+const ConverterInput = ({ textInput, conversionMode, handleTextareaChange, handleRadioChange }) => {
   /*
    * Input text and radio buttons to select conversion mode
   */
