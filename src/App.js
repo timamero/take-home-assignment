@@ -1,6 +1,7 @@
 import './App.css';
 import React from "react";
 import ConverterInput from './components/ConverterInput';
+import ConverterOutput from './components/ConverterOutput';
 
 function App() {
   const [textInput, setTextInput] = React.useState('Here is some example text.');
@@ -37,10 +38,7 @@ function App() {
             handleTextareaChange={handleTextareaChange} 
             handleRadioChange={handleRadioChange} 
           />
-          <div className="result-wrapper form-control form-control__text">
-            <label htmlFor="result">Converted text:</label>
-            <output id="result">{textOutput}</output>
-          </div>
+          <ConverterOutput textOutput={textOutput} />
         </form>  
     </div>
   );
